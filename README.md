@@ -11,4 +11,9 @@
 ## Windows и PE
 - Хедер в котором описана структура PE  
   [wine/include/winnt.h](https://source.winehq.org/source/include/winnt.h)
+  
+  ### Windows x86_64 ABI
+  - The arguments are passed in registers `RCX`, `RDX`, `R8`, and `R9`. 
+  - If the arguments are **float**/**double**, they are passed in `XMM0L`, `XMM1L`, `XMM2L`, and `XMM3L`. 
+  - 16 byte arguments are passed by reference. 
 
